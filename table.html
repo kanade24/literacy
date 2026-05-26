@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>時間割表</title>
+    <style>
+        /* 表を綺麗に見せるためのデザイン（CSS） */
+        table {
+            border-collapse: collapse; /* 枠線の重複を防ぐ */
+            width: 70%;                /* 表の横幅 */
+            margin: 30px auto;         /* 画面の中央に配置 */
+            font-family: sans-serif;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.2em;
+            margin-bottom: 12px;
+        }
+        h1 {
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #333333; /* 枠線の太さと色 */
+            padding: 12px;             /* セルの中の余白 */
+            text-align: center;        /* 文字を中央揃え */
+        }
+        th {
+            background-color: #e6f2ff; /* 見出しセルの背景色（薄い青） */
+            width: 33%;
+        }
+        .no-class {
+            color: #aaaaaa;            /* 授業がないコマの文字色を薄くする */
+            background-color: #fafafa; /* 授業がないコマの背景色 */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>時間割表（月曜・火曜）</h1>
+
+    <table>
+        <caption>時間割表（月曜・火曜）</caption>
+        <tr>
+            <th scope="col">時限</th>
+            <th scope="col">月曜日</th>
+            <th scope="col">火曜日</th>
+        </tr>
+        
+        <tr>
+            <td>1限</td>
+            <td class="no-class">ー</td>
+            <td class="no-class">ー</td>
+        </tr>
+        <tr>
+            <td>2限</td>
+            <td class="no-class">ー</td>
+            <td class="no-class">ー</td>
+        </tr>
+
+        <tr>
+            <td>3限</td>
+            <td rowspan="2">英語</td>
+            <td class="no-class">ー</td>
+        </tr>
+        <tr>
+            <td>4限</td>
+            <td class="no-class">ー</td>
+        </tr>
+
+        <tr>
+            <td>5限</td>
+            <td class="no-class">ー</td>
+            <td rowspan="2">フランス語</td>
+        </tr>
+        <tr>
+            <td>6限</td>
+            <td>数学</td>
+        </tr>
+
+        <tr>
+            <td>7限</td>
+            <td class="no-class">ー</td>
+            <td rowspan="2">情報リテラシー</td>
+        </tr>
+        <tr>
+            <td>8限</td>
+            <td>数学</td>
+        </tr>
+
+        <tr>
+            <td>9限</td>
+            <td rowspan="2">体育</td>
+            <td class="no-class">ー</td>
+        </tr>
+        <tr>
+            <td>10限</td>
+            <td class="no-class">ー</td>
+        </tr>
+    </table>
+
+</body>
+</html>
